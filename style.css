@@ -1,0 +1,151 @@
+body {
+  background: linear-gradient(#FFF4CF, #FFCB42, #FFB200, #277BC0) no-repeat;
+}
+
+.logo-encriptador {
+  width: 350px;
+}
+
+.encriptado-desencriptado {
+  justify-content: space-around;
+}
+
+.box{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.texto-encriptado, .texto-desencriptado{
+  height: 500px;
+  background: bisque;
+  border-radius: 20px;
+  box-shadow: 0px 24px 32px -8px #FFB200;
+}
+
+.textoEncriptado {
+  background: bisque;
+  border: none;
+  border-radius: 20px;
+  color: #277BC0;
+  display: flex;
+  font-style: italic;
+  font-size: 20px;
+  justify-content:center;
+  text-transform: lowercase;
+  width: 55rem;
+  
+}
+
+.textoEncriptado:focus{
+  border: none;
+  outline: none;
+}
+
+.textoDesencriptado{
+  background: bisque;
+  border: none;
+  border-radius: 20px;
+  color: #277BC0;
+  display: flex;
+  font-style: italic;
+  font-size: 20px;
+  justify-content: center;
+  text-transform: lowercase;
+  width: 25rem;
+}
+
+.textoDesencriptado:focus{
+  border: none;
+  outline: none;
+}
+
+::placeholder{
+  color: #277BC0;
+}
+
+.button{
+  display: flex;
+  padding: 0 15rem;
+}
+
+.btnEncriptado{
+  background: #277BC0;
+  border: none;
+  border-radius: 24px;
+  color: #FFCB42;
+  display: flex;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  flex: none;
+  flex-direction: row;
+  flex-grow: 0;
+  height: 67px;
+  justify-content:center;
+  line-height: 19px;
+  order: 0;
+  padding: 24px;
+  position: relative;
+  transition: 1s all;
+  width: 240px;  
+}
+
+.btnDesencriptado{
+  background: #277BC0;
+  border: none;
+  border-radius: 24px;
+  color: #FFCB42;
+  display: flex;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  flex: none;
+  flex-direction: row;
+  flex-grow: 0;
+  height: 67px;
+  justify-content:center;
+  line-height: 19px;
+  order: 0;
+  padding: 24px;
+  position: relative;
+  transition: 1s all;
+  width: 240px;  
+}
+
+.btnCopiar{
+  background: #277BC0;
+  border: none;
+  border-radius: 24px;
+  color: #FFCB42;
+  display: flex;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  flex: none;
+  flex-direction: row;
+  flex-grow: 0;
+  height: 67px;
+  justify-content:center;
+  left: 20.7%;
+  line-height: 19px;
+  margin: 0 auto;
+  order: 0;
+  padding: 24px;
+  position: relative;
+  transition: 1s all;
+  width: 240px;  
+}
+
+#btnCopiar{
+  display: none;
+}
+
+.footer {
+  background: transparent;
+  color: #FFF4CF;
+  font-style: italic;
+  grid-area: footer;
+  text-align: center;
+}

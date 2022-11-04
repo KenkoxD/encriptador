@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="encriptador.js"></script>
+        <title>Encriptador de texto</title>
+        
+    </head>
+
+    <body class="encriptador">
+        <header class="contenedor">
+            <img class="logo-encriptador" src="imagenes/logo.png" alt="Logo del Encriptador"></img>
+        </header>
+        <main class="encriptado-desencriptado">
+
+            <section class="box">
+                <div class="texto-encriptado">
+                    <textarea class="textoEncriptado" name="text" id="textoEncriptado" placeholder="Escriba su texto aquí, solo en minúsculas y sin acentos"></textarea>    
+                </div>
+                <div class="texto-desencriptado">
+                    <textarea class="textoDesencriptado" name="resultado" id="textoDesencriptado" placeholder="No se ha encontrado ningún texto"></textarea>   
+                </div>
+            </section>
+
+            <div class="button">           
+                <button class="btnEncriptado" type="button" id="btnEncriptado">Encriptar</button>
+                <button class="btnDesencriptado" type="button" id="btnDesencriptado">Desencriptar</button>
+                <button class="btnCopiar" type="button" id="btnCopiar">Copiar</button>
+            </div>
+        </main>
+    </body>
+
+    <script>
+        var btn = document.querySelector("#btnEncriptado");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector("#btnDesencriptado");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector("#btnCopiar");
+        btn3.onclick = copiar;
+    </script>
+
+    <footer class="footer">
+        <p>Proyecto hecho por: Katty Montenegro Flórez - 2022</p>
+        <a href="https://cl.linkedin.com/in/katty-montenegro-baa077a9?trk=profile-badge" target="_blank">
+            <img src="imagenes/linkedin.png" width="100px" height="100px">
+        </a>          
+        <a href="https://github.com/KenkoxD?tab=repositories" target="_blank">
+            <img src="imagenes/github.png" width="100px" height="100px">
+        </a>
+    </footer>
+
+</html>
